@@ -1,4 +1,6 @@
 {
+  
+  "homepage":"http://vision96.github.io/Movie-Character-App2", 
   "name": "movie-character-app",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +10,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "vite dev"
+    "start": "vite dev",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
